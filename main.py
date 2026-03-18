@@ -58,6 +58,7 @@ function sendDailyStockNews() {
     var dateString = Utilities.formatDate(new Date(), "GMT+8", "yyyy/MM/dd");
     var subject = "📊 【全網類股深度解析早報】" + dateString;
     
+    
     MailApp.sendEmail({
       to: emailAddress,
       subject: subject,
