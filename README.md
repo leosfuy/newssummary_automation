@@ -14,7 +14,7 @@ AI workflow that automates the extraction, multi-document summarization, and del
 4. **Error Monitoring:** Wraps the execution in a try-catch block. If the RSS fetch or API call fails, the script safely aborts the email generation and sends an error log notification to the developer instead.
 
 ## Output Example
- **[View Sample HTML Output (Open with Browser)](sample.html)**
+ **[View Sample HTML Output](sample.html)**
 
 
 ## How It Works (Workflow)
