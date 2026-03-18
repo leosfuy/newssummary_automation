@@ -7,11 +7,11 @@ AI workflow that automates the extraction, multi-document summarization, and del
 * **Environment:** Google Apps Script 
 * **AI Integration:** Google Gemini 2.5 Flash API
 * **Data Source:** Google News RSS 
-* **Key Features:**
-  * **Multi-Document Summarization:** Aggregates redundant news into concise, high-density summaries.
-  * **Zero-Hallucination Prompt Engineering:** Strict prompt constraints to prevent the AI from generating facts not present in the source text.
-  * **Automated Data Sanitization:** Strips out broken or tracking-heavy URLs to ensure a clean reading experience.
-  * **Error Handling & Fallback:** Built-in try-catch logic with automated error-alert emails to the developer if scraping or API calls fail.
+* ## ⚙️ Core Workflow
+1. **Data Retrieval & Parsing:** Scrapes the Google News RSS feed for specific sector keywords. It parses the XML to extract only the relevant article titles and descriptions.
+2. **AI Processing & Synthesis:** Sends the parsed raw text to the Gemini API. The prompt is strictly configured to group the news by industry sectors and synthesize the content into summaries, explicitly instructed not to generate information outside the provided text.
+3. **Formatting & Delivery:** Drops messy tracking URLs to keep the output clean. It then formats the AI's response into a readable HTML structure and emails it directly to the user via Google Apps Script.
+4. **Error Monitoring:** Wraps the execution in a try-catch block. If the RSS fetch or API call fails, the script safely aborts the email generation and sends an error log notification to the developer instead.
 
 ## 📷 Output Example
 
