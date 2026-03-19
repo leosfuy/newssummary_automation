@@ -19,7 +19,7 @@ AI workflow that automates the extraction, multi-document summarization, and del
 
 ## How It Works (Workflow)
 1. **Trigger:** A daily time-driven trigger awakens the script at 7:00 AM.
-2. **Fetch:** Scrapes the Google News RSS feed for the keyword "類股" (Sector Stocks) within the last 48 hours.
+2. **Fetch:** Scrapes the Google News RSS feed for the keyword "類股" (Sector Stocks) within the last 24 hours.
 3. **Parse:** Extracts titles, sources, and descriptions for up to 30 articles using XML parsing.
 4. **Synthesize:** Sends the raw text batch to the Gemini API with a heavily engineered prompt, asking it to categorize the news and write comprehensive summaries using HTML tags.
 5. **Deliver:** Wraps the AI's output in styled HTML and sends it via the `MailApp` service to the user's inbox.
