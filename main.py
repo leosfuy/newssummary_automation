@@ -1,6 +1,6 @@
 function sendDailyStockNews() {
-  var apiKey = 'AIzaSyDIeCrGR1qxOwRonJ_Gtkoforabt2POprk'; 
-  var emailAddress = 'leeangel100230@gmail.com'; 
+  var apiKey = 'your gemini api key'; 
+  var emailAddress = 'your gmail address'; 
 
   try {
     // === 1. 使用 Google 新聞搜尋「類股」，並限制「1天內 」 ===
